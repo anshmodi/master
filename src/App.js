@@ -1,11 +1,14 @@
 import Add from './Component/Add'
-import { InventoryContext } from './Context/InventoryContext';
+import View from './Component/View';
+import  InventoryContextProvider  from './Context/InventoryContext';
+
 function App() {
   return (
     <div className="App">
-      <InventoryContext.Provider>
+      <InventoryContextProvider>
          <Add/>
-      </InventoryContext.Provider>
+         <View/>
+      </InventoryContextProvider>
     </div>
   );
 }
